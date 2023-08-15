@@ -1,0 +1,248 @@
+cleả<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web Bán Hàng</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header_item">
+            <div class="logo"><img src="image\logo.jpg" alt=""></div>
+            <div class="menu">
+                <div id="trangchu" class="list_menu"><a href="index.html"> <button>Trang Chủ </button></a></div>
+                <div class="list_menu"><a href="dangnhap_dangky/form_html/dangnhap.html  "> <button>Đăng Nhập </button></a></div>
+                <div class="list_menu"><a href="#"> <button>Tin Mới </button></a></div>
+                <div class="list_menu"><a href="#"> <button>Thông Báo </button></a></div>
+                <div class="list_menu"><a href="#"> <button>Chat </button></a></div>
+            </div>
+            <div class="shopping_cart"><img src="image/giohang.jpg" alt=""></div>
+        </div>
+        <div class="search"><input class="input" type="text" placeholder=" Tìm kiếm...">
+            <div class="icon_search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
+        <!-- Phần slide -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--slide ảnh start-->
+                <div class="slide first">
+                    <img src="image/anh1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="image/anh2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="image/anh3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="image/anh4.jpg" alt="">
+                </div>
+                <!--slide ảnh end-->
+
+                <!--auto bắt đầu-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--auto kết thúc-->
+            </div>
+            <!--điều hướng thủ công start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--điều hướng thủ công end-->
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 4000);
+        </script>
+        <!-- Hết phần slide -->
+    </header>
+
+
+
+    <main>
+        <div class="background_main">
+            <div class="danh_sach_hang_hoa">
+                <div class="tieude">
+                    <h3>Top sản phẩm bán chạy</h3>
+                </div>
+                <ul class="products">
+                    <li class="list_sanpham">
+                        <div class="product_item">
+                            <div class="product_top">
+                                <a class="product_thumb" href=""><img src="image/nitro5.jpg" alt=""></a>
+                                <a href="#" class="add_cart">Thêm vào giỏ hàng</a>
+                            </div>
+                            <div class="product_infor">
+                                <a href="" class="product_name">Tên Sản Phẩm</a>
+                                <div class="product_price">Giá sản phẩm</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list_sanpham">
+                        <div class="product_item">
+                            <div class="product_top">
+                                <a class="product_thumb" href=""><img src="image/iphone14.jpg" alt=""></a>
+                                <a href="#" class="add_cart">Thêm vào giỏ hàng</a>
+                            </div>
+                            <div class="product_infor">
+                                <a href="" class="product_name">Tên Sản Phẩm</a>
+                                <div class="product_price">Giá sản phẩm</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list_sanpham">
+                        <div class="product_item">
+                            <div class="product_top">
+                                <a class="product_thumb" href=""><img src="image/Rolex.webp" alt=""></a>
+                                <a href="#" class="add_cart">Thêm vào giỏ hàng</a>
+                            </div>
+                            <div class="product_infor">
+                                <a href="" class="product_name">Tên Sản Phẩm</a>
+                                <div class="product_price">Giá sản phẩm</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list_sanpham">
+                        <div class="product_item">
+                            <div class="product_top">
+                                <a class="product_thumb" href=""><img src="image/tivi8k.jpg" alt=""></a>
+                                <a href="#" class="add_cart">Thêm vào giỏ hàng</a>
+                            </div>
+                            <div class="product_infor">
+                                <a href="" class="product_name">Tên Sản Phẩm</a>
+                                <div class="product_price">Giá sản phẩm</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+
+                <div class="danh_sach_danh_muc">
+                    <hr>
+                    <div class="tieude">
+                        <h3>Danh mục sản phẩm</h3>
+                    </div>
+                    <div class="dien_tu">
+                        <div class="list_danhmuc">
+                            <a href="thietbi_dientu\dienthoai.html"><img src="image/DienThoai.jpg" alt="điện thoại"></a>
+                            <div class="name_danhmuc">Điện thoại</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/LapTop.jpg" alt="điện thoại">
+                            <div class="name_danhmuc">Laptop</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/Tablet.jpg" alt="">
+                            <div class="name_danhmuc">Tablet</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/MayAnh.jpg" alt="">
+                            <div class="name_danhmuc">Máy ảnh</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/TiVi.jpg" alt="">
+                            <div class="name_danhmuc">Tivi</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/Loa.jpg" alt="">
+                            <div class="name_danhmuc">Loa</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/MayChieu.jpg" alt="">
+                            <div class="name_danhmuc">Máy chiếu</div>
+                        </div>
+                    </div>
+                    
+                    <div class="phu_kien">
+                        <div class="list_danhmuc">
+                            <img src="image/DongHo.jpg" alt="">
+                            <div class="name_danhmuc">Đồng hồ</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/TaiNghe.jpg" alt="">
+                            <div class="name_danhmuc">Tai nghe</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/BanPhim.jpg" alt="">
+                            <div class="name_danhmuc">bàn phím</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/Chuot.jpg" alt="">
+                            <div class="name_danhmuc">Chuột</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/SacDuPhong.jpg" alt="">
+                            <div class="name_danhmuc">Sạc dự phòng</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/OpLung.webp" alt="">
+                            <div class="name_danhmuc">Ốp lưng</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/GiaDoLapTop.jpg" alt="">
+                            <div class="name_danhmuc">Giá đỡ Laptop</div>
+                        </div>
+                        <div class="list_danhmuc">
+                            <img src="image/OCung.jpg" alt="">
+                            <div class="name_danhmuc">Ổ cứng</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="infor">
+                Ho Huu Thuan B2107182 student in CTU
+            </div>
+        </div>
+
+        <div id="backtop"><i class="fa-solid fa-arrow-up"></i></div>
+    </footer>
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="main.js"></script>
+
+</html>
