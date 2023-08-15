@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Phần header */
+
+.header_item{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(235, 181, 55);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo img{
+    width: 60px;
+    height: 50px;
+    margin: 10px 12px;
+}
+
+.menu{
+    display: flex;
+}
+
+.list_menu button{
+    width: 120px;
+    padding: 6px;
+    margin: 24px 15px;
+    border: 2px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#dangnhap button{
+    background-color: rgb(3, 172, 172);
+}
+
+button:hover{
+    margin: 23px 15px;
+    transition: 50ms ease-in-out;
+    background-color: rgb(3, 172, 172);
+}
+
+.shopping_cart{
+    margin: 10px 12px;
+    background-color: aqua;
+    width: 70px;
+    height: 70px;
+}
+
+
+/* Kết thúc phần header */
+
+
+main{
+    width: 100%;
+    height: 78vh;
+    
+}
+.background_form{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-color:   rgb(143, 221, 221);
+}
+
+.form{
+    min-height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form_login{
+    max-width: 600px;
+    background-color: rgb(0,0,0,0.5);
+    flex-grow: 1;
+    padding: 40px 60px;
+    box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.6);
+}
+
+.form_heading{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form_group{
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.form_group i{
+    padding-right: 10px;
+   font-size: 25px;
+}
+#eye i{
+    position: absolute;
+    right: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+}
+
+
+.form_input{
+    width: 100%;
+    color: #f5f5f5;
+    background: transparent;
+    border: 0px;
+    outline: 0;
+}
+.form_input::placeholder{
+    color: #f5f5f5;
+}
+
+
+.form_submit{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #f5f5f5;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 20px;
+}
+.form_submit:hover{
+    background-color: rgb(98, 181, 181);
+}
+
+.dangky{
+    
+    font-size: 18px;
+    padding: 10px 0px;
+}
+.dangky a{
+    font-size: 17px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+.dangky a:hover{
+    color:  rgb(143, 221, 221);
+}
+
+
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color:  rgb(235, 181, 55);
+    
+}
+.infor {
+    
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
